@@ -183,7 +183,7 @@ describe("scripts/lib/plugin-prerelease-test-plan.mjs", () => {
       retryPatterns: [],
       retries: 0,
       stateScenario: "empty",
-      timeoutMs: 900000,
+      timeoutMs: 25 * 60 * 1000,
       weight: 3,
     });
     expect(script).toContain("OPENCLAW_ENTRY=/app/openclaw.mjs");
